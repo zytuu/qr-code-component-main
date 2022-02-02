@@ -1,0 +1,79 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --clr-heading: hsl(218, 44%, 22%);
+  --clr-body: hsl(220, 15%, 55%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-background: hsl(212, 45%, 89%);
+
+  --ff-main: "Outfit", sans-serif;
+}
+
+/* Typography */
+html {
+  font-size: 15px;
+  font-family: var(--ff-main);
+  background-color: var(--clr-background);
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: var(--clr-heading);
+}
+
+p {
+  font-size: 1.25rem;
+  color: var(--clr-body);
+}
+
+.card {
+  background: var(--clr-white);
+}
+
+/* mobile styles */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-inline: 2.5rem;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 37vh;
+  border-radius: 20px;
+}
+
+.card h1 {
+  padding-block: 0.5em;
+}
+.card p {
+  padding-bottom: 2em;
+}
+
+.card__content {
+  padding-inline: 1em;
+}
